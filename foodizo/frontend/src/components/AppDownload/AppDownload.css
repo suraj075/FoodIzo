@@ -1,0 +1,37 @@
+.app-download{
+    margin: auto auto;
+    margin-top: 100px;
+    font-size: max(3vw,20px);
+    text-align: center;
+    font-weight: 500;
+}
+
+.app-download-platforms{
+    display: flex;
+    justify-content: center;
+    gap: max(2vw,10px);
+    margin-top: 40px;
+}
+
+.app-download-platforms img {
+    width: max(30vw,120px);
+    max-width: 180px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.app-download-platforms img:hover {
+    transform: scale(1.05);
+}
+
+.app-download .h2-style {
+    font-size: 1em; /* Equivalent to h2 font size */
+    font-weight: bold; /* Equivalent to h2 font weight */
+    text-align: center; /* Center the entire text */
+    line-height: 1.5; /* Adjust line height for better spacing */
+  }
+  
+  .tomato-text {
+    display: block; /* Ensure the span behaves like a block element */
+    text-align: center; /* Center the "Tomato App" text */
+    margin-top: 10px; /* Add some spacing between the lines */
+  }

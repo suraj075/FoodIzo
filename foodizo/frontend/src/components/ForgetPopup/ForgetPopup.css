@@ -1,0 +1,106 @@
+.forget-password-container {
+    position: fixed;  /* Changed from absolute to fixed */
+    top: 0;          /* Added to ensure full viewport coverage */
+    left: 0;         /* Added to ensure full viewport coverage */
+    z-index: 1;    /* Increased z-index to ensure it's on top */
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+
+.forget-password-box {
+    place-self: center;
+    width: max(23vw, 330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+}
+
+.forget-password-box h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.instruction {
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #666;
+}
+
+.form-group input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-group input:focus {
+    border-color: tomato;
+}
+
+.message {
+    padding: 12px;
+    background-color: #e8f5e9;
+    border-radius: 4px;
+    color: #2e7d32;
+    text-align: center;
+}
+
+.reset-button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.reset-button:hover {
+    background-color: #ff3d1f;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: tomato;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links a:hover {
+    color: #ff3d1f;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
